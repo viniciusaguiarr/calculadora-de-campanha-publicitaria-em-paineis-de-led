@@ -1,30 +1,30 @@
 # calculo de leds
-EMPRESA = input('Qual empresa você quer contratar, THE VOICE, PUBLIX, MANAUS MIDIAS, PURAKA, VIA DIRETA ou BIG FISH? ')
-SABE_NUM_INSER = input('Você sabe o número de inserções por dia? Digite: SIM ou NAO ')
+EMPRESA = input('Qual empresa você quer contratar, digite o numero: 1. THE VOICE, 2. PUBLIX, 3. MANAUS MIDIAS, 4. PURAKA, 5. VIA DIRETA ou 6. BIG FISH? ')
+SABE_NUM_INSER = input('Você sabe o número de inserções por dia? 1. SIM / 2. NAO ')
 
 empr = EMPRESA.upper()
 num_inser = SABE_NUM_INSER.upper()
 
-if empr == 'THE VOICE':
+if empr == '1':
         VAR_INSER = 2.75
         PLACAS = 10
-elif txt == 'PUBLIX':
+elif empr == '2':
         VAR_INSER = 2.95
         PLACAS = 5
-elif txt == 'MANAUS MIDIAS':
+elif empr == '3':
         VAR_INSER = 2.10
         PLACAS = 4
-elif txt == 'PURAKA':
+elif empr == '4':
         VAR_INSER = 2.75
         PLACAS = 2
-elif txt == 'VIA DIRETA':
+elif empr == '5':
         VAR_INSER = 3.90
         PLACAS = 2
-elif txt == 'BIG FISH':
+elif empr == '6':
         VAR_INSER = 2.75
         PLACAS = 1
 
-if num_inser == ('SIM'):
+if num_inser == ('1'):
     print('O valor de cada inserção com essa empresa é de R$ ',VAR_INSER,)
     DIAS = int(input('Quantos dias você que exibir? '))
     print('essa empresa possui ', PLACAS, ' placas disponíveis para veiculação')
@@ -32,7 +32,7 @@ if num_inser == ('SIM'):
     QNT_INSER = int(input('Quantas inserções você vai querer por placa? '))
     print(f'O valor total da veiculação será R$ {DIAS * QNT_PLACAS * QNT_INSER * VAR_INSER}')
 
-if num_inser == ('NAO'):
+if num_inser == ('2'):
     ORCAMENTO = int(input('Qual é o seu orçamento para essa campanha? apenas numeros'))
     print('O valor de cada inserção com essa empresa é de R$ ', VAR_INSER, )
     DIAS2 = int(input('Quantos dias você que exibir? '))
